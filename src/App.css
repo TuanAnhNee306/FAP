@@ -1,0 +1,111 @@
+/* src/App.css */
+
+/* Áp dụng box-sizing cho tất cả các phần tử trên trang */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Header Section --- */
+.header {
+  width: 100%;
+  background-color: white;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-left h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #004a99;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-links img {
+  height: 40px;
+}
+
+/* --- Navigation & User Info --- */
+.nav-bar {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.nav-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  gap: 10px;
+}
+
+.user-info span {
+  padding: 5px 10px;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.main-content {
+  max-width: 1400px;
+  width: 100%;
+  margin: 20px auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+/* --- Footer --- */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+  background-color: white;
+  font-size: 13px;
+  color: #555;
+}
+
+.header,
+.nav-bar,
+.main-content {
+  width: 100vw;         /* Đảm bảo không vượt quá viewport */
+  box-sizing: border-box;
+  padding-left: 5vw;    /* Dùng đơn vị vw để tránh tràn */
+  padding-right: 5vw;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: auto;     /* Ngăn tràn ngang */
+}
